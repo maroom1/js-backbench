@@ -57,3 +57,12 @@ console.log(findSecondLargest(test)); // -2
 
 var test = [1,4,6,9,3,2,2,3,5,6,3,3];
 console.log(findSecondLargest(test)); // 6
+
+// here's your array :
+var stringArray = new Array('20','120','111','215','54','78');
+
+// let's convert it to a real array of numbers, not of strings :
+var intArray = stringArray.map(Number);
+
+// now let's sort it and take the second element :
+var second = intArray.sort(function(a,b){return b-a})[1]; 
